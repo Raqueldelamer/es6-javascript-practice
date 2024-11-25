@@ -30,25 +30,33 @@ console.log(isPositive(-5));
 // function add(a, b) {
 //     return a + b;
 // }
+const add = (a, b) => a + b;
+console.log(add(4, 4)); // output 8
 
 // 2. Write an arrow function that takes an array of strings and returns an array of their lengths
 // function getStringLengths(arr) {
 //     // Your code here
+const getStringLengths = (arr) => arr.map(str => str.length);
+console.log(getStringLengths(["kiwi", "lemon", "coconut"]));
 // }
 
 // 3. Create an arrow function that takes two numbers and returns their difference
 // function subtract(a, b) {
-//     // Your code here
+const subtract = (a, b) => a - b;
+console.log(subtract(8, 4));
 // }
 
 // 4. Write an arrow function that takes a number and returns whether it is odd
 // function isOdd(num) {
-//     // Your code here
+const isOdd = (num) => num % 2 !== 0;
+console.log(isOdd(8));  //false (is even)
+console.log(isOdd(7));  //true (is odd)
 // }
 
 // 5. Create an arrow function that takes an array of numbers and returns the largest number in the array
 // function findMax(arr) {
-//     // Your code here
+const findMax = (arr) => Math.max(...arr);
+console.log(findMax([2, 3, 8, 9, 11]));
 // }
 
 // Solutions should be written directly below each TODO comment.
