@@ -40,27 +40,57 @@ console.log(introduce('Bob', 25)); // Output: Bob is 25 years old.
 
 // 1. Create a function that calculates the area of a rectangle with a default height of 10
 // function calculateArea(width, height) {
+
+function calculateArea(width, height = 10) {
+  return width * height;
+}
+
+console.log(calculateArea(2));       // output 20 (2 * 10)
+console.log(calculateArea(5, 10));   // output 50 (5 * 10)
 //     // Your code here
 // }
 
 // 2. Write a function that greets a person with a default name of 'Stranger'
 // function sayHello(name) {
 //     // Your code here
+function sayHello(name = 'Stranger') {
+  console.log(`Hello, ${name}!`);
+}
+
+sayHello();         // Output Hello, Stranger!
+sayHello('Minou');  // Output Hello, Minou!
 // }
 
 // 3. Create a function that returns the sum of two numbers, with the second number defaulting to 0
 // function add(a, b) {
 //     // Your code here
+function add(a, b = 0) {
+  return a + b;
+}
+
+console.log(add(5));      // Output 5 
+console.log(add(5, 5));   // Output 10 = (5 + 3)
 // }
 
 // 4. Write a function that returns a person's full name, with a default last name of 'Doe'
 // function getFullName(firstName, lastName) {
 //     // Your code here
+function getFullName(firstName, lastName = 'Doe') {
+  return `${firstName} ${lastName}`;
+}
+
+console.log(getFullName('John'));   // Output John Doe 
+
 // }
 
 // 5. Create a function that prints a person's favorite color, with the color defaulting to 'blue'
 // function favoriteColor(color) {
 //     // Your code here
+function favoriteColor(color = 'blue') {
+  console.log(`Your favorite color is ${color}.`);
+}
+
+favoriteColor();  // output= Your favorite color is blue.
 // }
 
 // Solutions should be written directly below each TODO comment.
